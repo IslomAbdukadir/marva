@@ -711,6 +711,36 @@ border-color:#12CBC4;
   list-style: none;
 }
 
+.menu-logo,
+.exit {
+  position: fixed;
+  top: 20px;
+  left: 28px;
+  z-index: 999;
+}
+
+.exit {
+  left: unset;
+  right: 28px;
+}
+
+.header-socials-fixed {
+  bottom: 7%;
+  left: 28px;
+  position: fixed;
+  z-index: 999;
+}
+
+.header-socials-fixed .header-socials-text {
+  font-size: 12px;
+  color: var(--accent);
+  padding: 5px 6px;
+  border: 1px solid var(--accent);
+}
+.header-socials-fixed .header-socials-link {
+  font-size: 20px;
+  color: var(--accent);
+}
 
 .dropdown-select .option.selected {
   color: #006069;
@@ -1449,7 +1479,6 @@ border-color:#12CBC4;
 }
 
 .menu,
-.exit,
 .menu-course {
   display: none;
 }
@@ -1468,7 +1497,7 @@ border-color:#12CBC4;
   text-align: right;
   align-items: flex-end;
   gap: 10px;
-  z-index: 998;
+  z-index: 999;
 }
 
 .body-btn {

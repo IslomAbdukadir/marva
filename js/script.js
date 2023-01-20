@@ -127,18 +127,29 @@ let sectionList = document.querySelector(".section-list");
 let list2 = document.querySelector(".header-list2");
 // let line = document.querySelector(".line");
 let menu = document.querySelector(".menu-dark");
+let menuLogo = document.querySelector(".menu-logo");
+let headerSocialsFixed = document.querySelector(".header-socials-fixed");
+let close = document.querySelector(".close");
 
+
+$(menuLogo).hide();
+$(close).hide();
+$(".exit").hide();
+$(headerSocialsFixed).hide();
 $(span).click(function () {
   span.style.display = "none";
   list.style.right = "0";
   list2.style.right = "0";
   // line.style.right = "0";
-  bodyBtns.style.display = "none";
-
+  // bodyBtns.style.display = "none";
+  $(menuLogo).fadeIn(700);
+  $(".exit").fadeIn(700);
+  $(headerSocialsFixed).fadeIn(700);
 });
 $(menu).click(function () {
   span.style.display = "none";
   sectionList.style.right = "0";
+  $(close).show();
   // line.style.right = "0";
 });
 
@@ -146,9 +157,18 @@ $(".exit").click(function () {
   span.style.display = "flex";
   sectionList.style.right = "-100%";
   list.style.right = "-100%";
-  bodyBtns.style.display = "flex";
-
-  // line.style.right = "-150px";
+  // bodyBtns.style.display = "flex";
+  $(menuLogo).hide(700);
+  $(".exit").hide();
+  $(headerSocialsFixed).hide();
+});
+$(close).click(function () {
+  span.style.display = "flex";
+  sectionList.style.right = "-100%";
+  list.style.right = "-100%";
+  $(menuLogo).hide(700);
+  $(".exit").hide();
+  $(headerSocialsFixed).hide();
 });
 
 //
@@ -180,7 +200,7 @@ $(window).scroll(function () {
   console.log("scrollTop: " + $(window).scrollTop());
   console.log("headerHeight: " + headerHeight);
 
-  bodyBtns.style.display = "flex";
+  // bodyBtns.style.display = "flex";
 
 
   if ($(window).scrollTop() > headerHeight) {
@@ -193,6 +213,9 @@ $(window).scroll(function () {
     $(sectionNav).hide();
     span.style.display = "flex";
     list.style.right = "-100%";
+    $(menuLogo).hide();
+    $(".exit").hide();
+    $(headerSocialsFixed).hide();
   }
 });
 
@@ -518,7 +541,7 @@ $(menuCourse).click(function () {
   $(courseItem2).fadeToggle(500);
   courseItem2.style.display = "flex";
   $(courseItem3).fadeToggle(1000);
-  $(courseItem4).fadeToggle(1500); 
+  $(courseItem4).fadeToggle(1500);
 });
 
 

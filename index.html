@@ -27,8 +27,6 @@
 </head>
 
 <body>
-    <!-- <div class="swiper-container" id="swiper"> -->
-    <!-- <div class="swiper-wrapper" id="swiper-wrapper"> -->
     <header class="header" id="header">
         <nav class="header-nav">
             <div class="line"></div>
@@ -53,9 +51,6 @@
                     <li class="header-item">
                         <a href="#" class="header-link lang" key="students">Студенты</a>
                     </li>
-                    <li class="header-item exit">
-                        <a href="#!" class="header-link exit lang" key="exit">Закрыть</a>
-                    </li>
                     <ul class="header-list2 list">
                         <li class="header__item-lang header__item-lang-ru">
                             <button id="ru" class="translate active">ru</button>
@@ -78,7 +73,8 @@
                 </div>
                 <form class="about-content-form about-header-form">
                     <input type="text" name="" id="" placeholder="Имя Фамилия*" required>
-                    <input type="text" name="Телефон" class="input-phone-number2 js-input-phone-number2" required placeholder="Номер телефона*">
+                    <input type="text" name="Телефон" class="input-phone-number2 js-input-phone-number2" required
+                        placeholder="Номер телефона*">
                     <select class="custom-select custom-select-white" name="" placeholder=""><i
                             class="fi fi-sr-caret-down"></i>
                         <option value="" class="option lang" key="no">Нет опыта</option>
@@ -134,13 +130,13 @@
                         <a href="pages/course.html" class="header-link header-link-dark lang" key="courses">Курсы</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header-link header-link-dark lang" key="sertification">О нас</a>
+                        <a href="#!" class="header-link header-link-dark lang" key="sertification">О нас</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header-link header-link-dark lang" key="students">Студенты</a>
+                        <a href="#!" class="header-link header-link-dark lang" key="students">Студенты</a>
                     </li>
-                    <li class="header-item exit">
-                        <a href="#!" class="header-link exit lang" key="exit">Закрыть</a>
+                    <li class="header-item close">
+                        <a href="#!" class="header-link header-link-dark lang" key="exit">Закрыть</a>
                     </li>
                     <ul class="header-list2 header-list2-dark list">
                         <li class="header__item-lang header__item-lang-ru">
@@ -420,42 +416,6 @@
         </div>
     </section>
     <section class="feature" id="feature">
-        <!-- <nav class="header-nav section-nav section-nav-end">
-                    <div class="line"></div>
-                    <div class="container">
-                        <a href="index.html" class="header-logo">
-                            <img src="img/logoDark.svg" alt="">
-                        </a>
-                        <a href="#!" class="header-span"></a>
-                        <ul class="header-list">
-                            <li class="header-item">
-                                <a href="#!" class="header-link header-link-dark lang" key="news">Новости</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#" class="header-link header-link-dark lang" key="courses">Курсы</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#" class="header-link header-link-dark lang"
-                                    key="sertification">О нас</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#" class="header-link header-link-dark lang" key="students">Студенты</a>
-                            </li>
-                            <li class="header-item">
-                                <a href="#!" class="header-link header-link-dark exit lang" key="exit">Закрыть</a>
-                            </li>
-                            <ul class="header-list2 header-list2-dark list">
-                                <li class="header__item-lang header__item-lang-ru">
-                                    <button id="ru" class="translate translate-dark active">ru</button>
-                                </li>
-                                <li class="header__item-lang header__item-lang-uz">
-                                    <button id="uz" class="translate translate-dark">uz</button>
-                                </li>
-                                <div class="circle circle-dark"></div>
-                            </ul>
-                        </ul>
-                    </div>
-                </nav> -->
         <div class="container feature-container">
             <h2 class="courses-title lang" key="courseTitleFeature">Наши преимущества</h2>
             <div class="feature-cards">
@@ -498,7 +458,8 @@
                             Я сам получил эти знания именно в Академии Марва и стал профессиональным
                             стоматологом.
                             Я могу с уверенностью сказать, что Академия Марва не только дала мне знания, но и открыла
-                            мне двери возможностей стать хорошим профессионалом.<br><br> Я очень благодарa академии за это.
+                            мне двери возможностей стать хорошим профессионалом.<br><br> Я очень благодарa академии за
+                            это.
                         </p>
                     </div>
                     <div class="swiper-slide feature-review">
@@ -693,6 +654,24 @@
     <a href="#header" class="up">
         <img src="img/icons/upWhite.svg" alt="">
     </a>
+
+    <a href="index.html" class="menu-logo">
+        <img src="img/logoDark.svg" alt="">
+    </a>
+    <a href="#!" class="exit">
+        <img src="img/exit.svg" alt="">
+    </a>
+
+    <div class="header-socials-fixed">
+        <p class="header-socials-text lang" key="socials">Следите за нами в социальных сетях</p>
+        <div class="header-socials-links">
+            <a href="https://instagram.com/marva_education_uz?igshid=YmMyMTA2M2Y="
+                class="header-socials-link">instagram</a>
+            <a href="https://www.facebook.com/marva.uzbekistan?mibextid=LQQJ4d"
+                class="header-socials-link">facebook</a>
+            <a href="https://t.me/marva_education" class="header-socials-link">telegram</a>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/imask"></script>
