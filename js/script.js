@@ -144,8 +144,8 @@ $(menu).click(function () {
 
 $(".exit").click(function () {
   span.style.display = "flex";
-  sectionList.style.right = "-150px";
-  list.style.right = "-150px";
+  sectionList.style.right = "-100%";
+  list.style.right = "-100%";
   bodyBtns.style.display = "flex";
 
   // line.style.right = "-150px";
@@ -192,7 +192,7 @@ $(window).scroll(function () {
     $(headerNav).show();
     $(sectionNav).hide();
     span.style.display = "flex";
-    list.style.right = "-150px";
+    list.style.right = "-100%";
   }
 });
 

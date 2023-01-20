@@ -589,28 +589,6 @@
         top: -7px;
     }
 
-    .menu:hover .menu span::before {
-        -webkit-transform: translateX(-50%) rotate(-45deg);
-        -ms-transform: translateX(-50%) rotate(-45deg);
-        transform: translateX(-50%) rotate(-45deg);
-    }
-
-    .line {
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(15px);
-        position: fixed;
-        width: 150px;
-        height: 100%;
-        top: 0;
-        right: -150px;
-        bottom: 0;
-        z-index: 98;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-        z-index: 999;
-    }
-
     .header-list {
         position: fixed;
         display: -webkit-box;
@@ -620,17 +598,17 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        max-width: 150px;
-        right: -150px;
+        /* max-width: 150px; */
+        right: -100%;
         width: 100%;
         top: 0;
         bottom: 0;
         height: 100vh;
         background: #fff;
         text-align: center;
-        -webkit-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
+        -webkit-transition: 0.8s;
+        -o-transition: 0.8s;
+        transition: 0.8s;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
@@ -639,7 +617,7 @@
 
     .header-link {
         color: #006069;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .header-list2 {
@@ -1137,6 +1115,15 @@
     .about-course-form button,
     .about-course-form button .about-info-txt {
         width: 390px;
+    }
+
+    .course-item {
+        width: 325px;
+    }
+
+    .swiper-icons {
+        left: 64%;
+        top: -460px;
     }
 }
 
