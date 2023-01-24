@@ -168,26 +168,26 @@ $(".exit").click(function () {
 
 // var width = $(window).width();
 let bodyBtns = document.querySelector(".body-btns");
-// let up = document.querySelector(".up");
-// var headerHeight = $("header").outerHeight();
-// var $nav = $("nav");
+let up = document.querySelector(".up");
+var headerHeight = $("header").outerHeight();
+var $nav = $("nav");
 
 bodyBtns.style.display = "flex";
 
 
-// $(window).scroll(function () {
-//   console.log("scrollTop: " + $(window).scrollTop());
-//   console.log("headerHeight: " + headerHeight);
+$(window).scroll(function () {
+  console.log("scrollTop: " + $(window).scrollTop());
+  console.log("headerHeight: " + headerHeight);
 
 //   // bodyBtns.style.display = "flex";
 
 
-//   if ($(window).scrollTop() > headerHeight) {
-//     up.style.display = "flex";
-//   } else {
-   
-//   }
-// });
+  if ($(window).scrollTop() > headerHeight) {
+    up.style.display = "flex";
+  } else {
+    up.style.display = "none";   
+  }
+});
 
 var swiper2 = new Swiper('.swiper', {
   clickable: true,
