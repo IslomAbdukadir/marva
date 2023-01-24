@@ -12,6 +12,12 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/GothamPro/GothamPro-Black.ttf);
+    font-weight: 900;
+}
+
 /* Gotham */
 
 /* Montserrat */
