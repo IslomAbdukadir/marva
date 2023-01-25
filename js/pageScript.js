@@ -128,27 +128,22 @@ $(function () {
 
 let span = document.querySelector(".menu");
 let list = document.querySelector(".header-list");
-let sectionList = document.querySelector(".section-list");
 let list2 = document.querySelector(".header-list2");
-let menu = document.querySelector(".menu-dark");
+let exit = document.querySelector(".exit");
 
+
+$(exit).hide();
 $(span).click(function () {
   span.style.display = "none";
   list.style.right = "0";
   list2.style.right = "0";
-  bodyBtns.style.display = "none";
-
-});
-$(menu).click(function () {
-  span.style.display = "none";
-  sectionList.style.right = "0";
+  $(exit).fadeIn(700);
 });
 
-$(".exit").click(function () {
+$(exit).click(function () {
   span.style.display = "flex";
-  sectionList.style.right = "-150px";
-  list.style.right = "-150px";
-  bodyBtns.style.display = "flex";
+  list.style.right = "-100%";
+  $(exit).hide();
 });
 
 // 
@@ -382,9 +377,7 @@ $(document).ready(function () {
 
 //Маска для тел (рабочий вариант)
 const element = document.querySelector(".input-phone-number");
-// const element3 = document.querySelector(".input-phone-number2");
 const element2 = document.querySelector(".js-input-phone-number");
-// const element4 = document.querySelector(".js-input-phone-number2");
 
 var maskOptions = {
   mask: "+998 (00) 000-00-00",
@@ -393,5 +386,3 @@ var maskOptions = {
 
 var mask = new IMask(element, maskOptions);
 var mask = new IMask(element2, maskOptions);
-// var mask = new IMask(element3, maskOptions);
-// var mask = new IMask(element4, maskOptions);

@@ -121,11 +121,8 @@ $(function () {
 //
 
 let span = document.querySelector(".menu");
-// let spanDark = document.querySelector(".menu.dark");
 let list = document.querySelector(".header-list");
 let list2 = document.querySelector(".header-list2");
-// let line = document.querySelector(".line");
-// let menu = document.querySelector(".menu-dark");
 let headerSocialsFixed = document.querySelector(".header-socials-fixed");
 
 
@@ -135,20 +132,10 @@ $(span).click(function () {
   span.style.display = "none";
   list.style.right = "0";
   list2.style.right = "0";
-  // line.style.right = "0";
-  // bodyBtns.style.display = "none";
   $(".exit").fadeIn(700);
   $(headerSocialsFixed).fadeIn(700);
 });
 
-// $(".exit").click(function () {
-//   span.style.display = "flex";
-//   sectionList.style.right = "-100%";
-//   list.style.right = "-100%";
-//   // bodyBtns.style.display = "flex";
-//   $(".exit").hide();
-//   $(headerSocialsFixed).hide();
-// });
 $(".exit").click(function () {
   span.style.display = "flex";
   list.style.right = "-100%";
@@ -156,38 +143,9 @@ $(".exit").click(function () {
   $(headerSocialsFixed).hide();
 });
 
-//
-
-// var swiper = new Swiper('.swiper-container', {
-//     direction: 'vertical',
-//     speed: 1200,
-//     mousewheel: true,
-//     slidesPerView: 1,
-// });
-
-
-// var width = $(window).width();
 let bodyBtns = document.querySelector(".body-btns");
-let up = document.querySelector(".up");
-var headerHeight = $("header").outerHeight();
-var $nav = $("nav");
 
 bodyBtns.style.display = "flex";
-
-
-$(window).scroll(function () {
-  console.log("scrollTop: " + $(window).scrollTop());
-  console.log("headerHeight: " + headerHeight);
-
-//   // bodyBtns.style.display = "flex";
-
-
-  if ($(window).scrollTop() > headerHeight) {
-    up.style.display = "flex";
-  } else {
-    up.style.display = "none";   
-  }
-});
 
 var swiper2 = new Swiper('.swiper', {
   clickable: true,
@@ -229,7 +187,6 @@ $(link1).click(function () {
   $(box3).hide();
   $(box4).hide();
 
-  // $(box1).show(600);
   $(box1).fadeIn(1000);
   $(item1).addClass("active");
 
@@ -496,24 +453,3 @@ var mask = new IMask(element3, maskOptions);
 var mask = new IMask(element4, maskOptions);
 
 // 
-let menuCourse = document.querySelector(".menu-course");
-let courseItem2 = document.querySelector(".course-item2");
-let courseItem3 = document.querySelector(".course-item3");
-let courseItem4 = document.querySelector(".course-item4");
-
-// $(menuCourse).click(function () {
-//   $(courseItem2).fadeOut(1500);
-//   $(courseItem3).fadeOut(1000);
-//   $(courseItem4).fadeOut(500);
-// });
-
-$(menuCourse).click(function () {
-  $(courseItem2).fadeToggle(500);
-  courseItem2.style.display = "flex";
-  $(courseItem3).fadeToggle(1000);
-  $(courseItem4).fadeToggle(1500);
-});
-
-
-
-//

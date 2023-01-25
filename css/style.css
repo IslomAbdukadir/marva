@@ -710,17 +710,12 @@ border-color:#12CBC4;
 .exit {
   position: fixed;
   top: 20px;
-  left: 28px;
+  right: 28px;
   z-index: 999;
 }
 
-.exit {
-  left: unset;
-  right: 28px;
-}
-
 .header-socials-fixed {
-  bottom: 7%;
+  bottom: 5%;
   left: 28px;
   position: fixed;
   z-index: 999;
@@ -1218,6 +1213,7 @@ border-color:#12CBC4;
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 50px;
+  z-index: 998;
 }
 
 .footer .container {
@@ -1514,7 +1510,7 @@ border-color:#12CBC4;
   display: none;
   flex-direction: column;
   gap: 10px;
-  z-index: 998;
+  z-index: 111;
 }
 
 /*  */
