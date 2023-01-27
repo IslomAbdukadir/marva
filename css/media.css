@@ -645,15 +645,19 @@
     .course-box-img-right {
         text-align: right;
     }
-
+/* 
     html {
         overflow-x: hidden;
-    }
+    } */
 
     .about-content-img {
         max-width: 368px;
         max-height: 324px;
         margin-bottom: 20px;
+    }
+
+    .course {
+        overflow: hidden;
     }
 
     .course-list {
@@ -665,6 +669,7 @@
         width: fit-content;
         -webkit-animation: loop 20s ease-in-out infinite alternate;
         animation: loop 20s ease-in-out infinite alternate;
+        overflow-x: hidden;
     }
 
     @-webkit-keyframes loop {
