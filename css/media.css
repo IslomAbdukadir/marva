@@ -56,6 +56,8 @@
     }
 
     .header-contacts {
+        -webkit-transform: translateY(80px);
+        -ms-transform: translateY(80px);
         transform: translateY(80px);
     }
 
@@ -93,7 +95,6 @@
     .course-cards {
         margin-bottom: 10px;
     }
-    
 }
 
 @media (max-width: 1366px) {
@@ -291,6 +292,8 @@
     }
 
     .header-contacts {
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
         transform: translateY(30px);
     }
 }
@@ -303,7 +306,6 @@
     .about-header-form {
         display: none;
     }
-
 }
 
 @media (max-width: 1024px) {
@@ -362,6 +364,8 @@
     }
 
     .header-contacts {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
         transform: translateY(0);
     }
 
@@ -627,6 +631,9 @@
     }
 
     .course-course-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
         background: none;
     }
@@ -650,17 +657,36 @@
     }
 
     .course-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
+        -webkit-animation: loop 20s ease-in-out infinite alternate;
         animation: loop 20s ease-in-out infinite alternate;
     }
 
-    @keyframes loop {
+    @-webkit-keyframes loop {
         0% {
+            -webkit-transform: translateX(0);
             transform: translateX(0);
         }
 
         100% {
+            -webkit-transform: translateX(-65%);
+            transform: translateX(-65%);
+        }
+    }
+
+    @keyframes loop {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
         }
     }
@@ -700,6 +726,8 @@
     }
 
     .about-course-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -724,6 +752,22 @@
     .about-header-form input,
     .about-header-form button .about-info-txt {
         width: 330px;
+    }
+
+    .about-header-form input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .about-header-form input::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .about-header-form input:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .about-header-form input::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
     }
 
     .about-header-form input::placeholder {
@@ -930,6 +974,8 @@
 
     .feature-card:nth-of-type(3),
     .feature-card:nth-of-type(4) {
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
         transform: translateY(-1px);
         border-radius: 0 0 19px 19px;
     }
@@ -1043,7 +1089,6 @@
     .about-info-txt {
         line-height: 19px;
     }
-
 }
 
 @media (max-width: 430px) {
@@ -1062,7 +1107,11 @@
 
     .feature-card {
         width: 145px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 0 0 0 15px;
         gap: 5px;
@@ -1137,7 +1186,6 @@
     .header-socials-fixed .header-socials-link {
         font-size: 14px;
     }
-
 }
 
 @media (max-width: 375px) {
@@ -1221,7 +1269,6 @@
         max-width: 259px;
         max-height: 228px;
     }
-
 }
 
 @media (max-width: 360px) {
@@ -1271,7 +1318,6 @@
     .swiper-icons {
         top: -466px;
     }
-
 }
 
 @media (max-width: 320px) {
