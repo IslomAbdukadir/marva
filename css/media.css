@@ -645,10 +645,6 @@
     .course-box-img-right {
         text-align: right;
     }
-/* 
-    html {
-        overflow-x: hidden;
-    } */
 
     .about-content-img {
         max-width: 368px;
@@ -664,41 +660,55 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        -webkit-animation: loop 20s ease-in-out infinite alternate;
-        animation: loop 20s ease-in-out infinite alternate;
-        overflow-x: hidden;
+        overflow-x: overlay;
     }
 
-    @-webkit-keyframes loop {
+    /* @-webkit-keyframes loop {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
-
+  
         100% {
             -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
         }
     }
-
+  
     @keyframes loop {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
-
+  
         100% {
             -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
         }
-    }
+    } */
 
     .course-item {
-        width: 280px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
         margin-right: 20px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .course-link {
+        width: 250px;
+        font-size: 18px;
     }
 
     .course-card-info::after {
