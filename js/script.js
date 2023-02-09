@@ -478,3 +478,15 @@ $(window).scroll(function () {
     $("#feature").addClass("animate__slideInUp");
   }
 });
+
+// 
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('.teethUp').addClass('down');
+    $('.teethBottom').addClass('high');
+  } else {
+    $('.teethUp').removeClass('down');
+    $('.teethBottom').removeClass('high');
+  }
+});
