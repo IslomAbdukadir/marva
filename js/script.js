@@ -482,11 +482,15 @@ $(window).scroll(function () {
 // 
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 10) {
     $('.teethUp').addClass('down');
     $('.teethBottom').addClass('high');
+    $('.letter-img').addClass('none');
+    $('.about-header-form').addClass('none');
   } else {
     $('.teethUp').removeClass('down');
     $('.teethBottom').removeClass('high');
+    $('.letter-img').removeClass('none');
+    $('.about-header-form').removeClass('none');
   }
 });

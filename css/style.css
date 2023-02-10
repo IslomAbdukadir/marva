@@ -298,7 +298,14 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
+  opacity: 1;
   object-fit: cover;
+  transition: 0.8s;
+}
+
+.letter-img.none,
+.about-header-form.none {
+  opacity: 0;
 }
 
 .animate__animated.animate__fadeIn {
@@ -307,6 +314,7 @@ a {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
+
 .animate__animated.animate__slideInUp {
   -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
@@ -516,7 +524,7 @@ section {
   overflow: hidden;
 }
 
-.about-content-img video {
+.about-content-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -560,6 +568,7 @@ input::-webkit-inner-spin-button {
 
 .about-header-form {
   display: none;
+  transition: .4s;
 }
 
 .about-content-form input::-webkit-input-placeholder {
