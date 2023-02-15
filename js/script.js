@@ -467,21 +467,40 @@ $(window).scroll(function () {
 
   if ($(window).scrollTop() > headerHeight) {
     $("#about").addClass("animate__animated");
-    $("#about").addClass("animate__slideInUp");
+    $("#about").addClass("animate__fadeIn");
   }
   if ($(window).scrollTop() > headerHeight + 800) {
     $("#course").addClass("animate__animated");
-    $("#course").addClass("animate__slideInUp");
+    $("#course").addClass("animate__fadeIn");
   }
   if ($(window).scrollTop() > headerHeight + 1400) {
     $("#feature").addClass("animate__animated");
-    $("#feature").addClass("animate__slideInUp");
+    $("#feature").addClass("animate__fadeIn");
+    $('.counter').each(function () {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+        countNum: countTo
+      }, {
+        duration: 2000,
+        easing: 'linear',
+        step: function () {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+          $this.text(this.countNum);
+          //alert('finished');
+        }
+      });
+    });
   }
 });
 
 // 
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(document).scrollTop() > 10) {
     $('.teethUp').addClass('down');
     $('.teethBottom').addClass('high');
