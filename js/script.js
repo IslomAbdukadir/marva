@@ -468,6 +468,7 @@ $(window).scroll(function () {
   if ($(window).scrollTop() > headerHeight) {
     $("#about").addClass("animate__animated");
     $("#about").addClass("animate__fadeIn");
+
   }
   if ($(window).scrollTop() > headerHeight + 800) {
     $("#course").addClass("animate__animated");
@@ -512,4 +513,43 @@ $(window).scroll(function () {
     $('.letter-img').removeClass('none');
     $('.about-header-form').removeClass('none');
   }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  MicroModal.init({
+    openTrigger: 'data-custom-open',
+    closeTrigger: 'data-custom-close',
+    disableScroll: true,
+    disableFocus: true,
+    awaitOpenAnimation: true,
+    awaitCloseAnimation: true
+  })
+  $('[data-custom-open]').click(function () {
+    $('.modal [name=form]').val($(this).data('form'))
+  })
+  $('[data-custom-close]').click(function () {
+    $('.modal [name=form]').val('')
+  })
+})
+
+// 
+
+const swiper = new Swiper('.swiper-youtube', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    clickable: true,
+
+  },
 });

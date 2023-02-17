@@ -401,31 +401,6 @@ section {
   height: 100vh;
 }
 
-::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-::-webkit-scrollbar-button {
-  display: none;
-}
-
-::-webkit-scrollbar-track-piece {
-  display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  display: none;
-}
-
-::-webkit-resizer {
-  display: none;
-}
-
 .header-link-dark {
   color: var(--accent) !important;
 }
@@ -522,6 +497,18 @@ section {
   max-width: 387px;
   max-height: 340px;
   overflow: hidden;
+  position: relative;
+}
+
+.about-content-video-link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  z-index: 1;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .about-content-img video {
@@ -1230,10 +1217,6 @@ border-color:#12CBC4;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.swiper-wrapper {
-  overflow: hidden;
 }
 
 /* feature end */
@@ -2211,3 +2194,80 @@ border-color:#12CBC4;
 }
 
 /*  */
+
+/* modal */
+
+.modal {
+  position: relative;
+  z-index: 999;
+}
+
+.modal__container {
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 80%;
+  min-height: 85vh;
+}
+
+.modal__title {
+  text-align: center;
+  width: 100%;
+  color: #454545;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+}
+
+.modal__close {
+  opacity: 0.8;
+  transition: .4s;
+  position: relative;
+  top: -5px;
+  right: 0;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+.swiper-youtube {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  max-width: 100%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide iframe {
+  width: 90%;
+  height: 70vh;
+  border: none;
+  outline: none;
+}
+
+.swiper-button-prev {
+  padding-left: 20px;
+  color: var(--accent);
+}
+
+.swiper-button-next {
+  padding-right: 20px;
+  color: var(--accent);
+}
+
+.swiper-pagination {
+  margin-top: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent);
+}
+
+/* modal */
