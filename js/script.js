@@ -550,6 +550,46 @@ const swiper = new Swiper('.swiper-youtube', {
   scrollbar: {
     el: '.swiper-scrollbar',
     clickable: true,
-
   },
+});
+
+// 
+
+const swiper3 = new Swiper('.media-swiper', {
+  loop: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 15,
+  navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+  },
+});
+
+const swiper4 = new Swiper('.media-swiper2', {
+  loop: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 15,
+  navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+  },
+});
+
+// 
+
+$(".media-swiper2").hide();
+
+$(".toggle2").click(function (e) { 
+    $(".toggle1").removeClass("active");
+    $(".toggle2").addClass("active");
+    $(".media-swiper").hide();
+    $(".media-swiper2").show();
+});
+$(".toggle1").click(function (e) { 
+    $(".toggle2").removeClass("active");
+    $(".toggle1").addClass("active");
+    $(".media-swiper2").hide();
+    $(".media-swiper").show();
 });
