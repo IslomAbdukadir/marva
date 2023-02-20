@@ -678,6 +678,7 @@
 
     .course {
         overflow: hidden;
+        padding-top: 120px;
     }
 
     .course-list {
@@ -805,6 +806,10 @@
     .about-header-form input,
     .about-header-form button .about-info-txt {
         width: 330px;
+    }
+
+    .about-header-form input {
+        color: rgba(255, 255, 255, 0.5);
     }
 
     .about-header-form input::-webkit-input-placeholder {
@@ -1240,7 +1245,7 @@
     .header-socials-fixed .header-socials-link {
         font-size: 14px;
     }
-    
+
 }
 
 @media (max-width: 375px) {

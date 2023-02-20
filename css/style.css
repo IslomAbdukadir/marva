@@ -430,7 +430,7 @@ section {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 50px;
-  padding-top: 50px;
+  padding: 70px 0 50px;
 }
 
 .about-info {
@@ -488,7 +488,7 @@ section {
   max-width: 814px;
   font-size: 16px;
   font-family: "Montserrat";
-  color: #b0b0b0;
+  color: #000;
   margin-bottom: 15px;
   text-align: justify;
 }
@@ -1143,6 +1143,10 @@ border-color:#12CBC4;
 /* tutor end */
 
 /* feature start */
+
+.feature {
+  padding-top: 0;
+}
 
 .feature-container {
   display: -webkit-box;
