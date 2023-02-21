@@ -2460,6 +2460,7 @@ border-color:#12CBC4;
   border: none;
   outline: none;
   font-size: 24px;
+  color: #000;
 }
 
 .media-toggle.active {

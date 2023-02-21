@@ -1598,6 +1598,11 @@
     .gallery-card-txt {
         font-size: 9px;
     }
+
+    .media-toggle {
+        width: 119px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 320px) {
