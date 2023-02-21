@@ -9,7 +9,7 @@
 
     section {
         height: 100%;
-        padding: 100px 0 50px;
+        padding: 50px 0;
     }
 
     .teethUp {
@@ -106,6 +106,15 @@
 
     .course-cards {
         margin-bottom: 10px;
+    }
+
+    .tutor-card {
+        max-width: 250px;
+        max-height: 400px;
+    }
+
+    .gallery-card {
+        width: 320px;
     }
 }
 
@@ -319,6 +328,18 @@
         -webkit-transform: translateY(30px);
         -ms-transform: translateY(30px);
         transform: translateY(30px);
+    }
+
+    .tutor-cards {
+        gap: 30px;
+    }
+
+    .gallery-card {
+        width: 260px;
+    }
+
+    .gallery-card-txt {
+        font-size: 16px;
     }
 }
 
@@ -628,6 +649,39 @@
         max-width: 435px;
     }
 
+    .course,
+    .about-section,
+    .news,
+    .tutor {
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .footer {
+        padding-top: 10px;
+    }
+
+    .footer-item {
+        margin-bottom: 15px;
+    }
+
+    .footer-table-date {
+        font-size: 13px;
+    }
+
+    .footer-item a {
+        font-size: 14px;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    .swiper-txt {
+        height: 50px;
+        font-size: 16px;
+    }
+
     .dropdown-select .option {
         line-height: 20px;
         margin: 12px 0;
@@ -676,46 +730,42 @@
         margin-bottom: 20px;
     }
 
-    .course {
-        overflow: hidden;
-        padding-top: 120px;
-    }
-
     .course-list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        overflow-x: overlay;
+        width: fit-content;
+        animation: loop infinite alternate 15s;
     }
 
-    /* @-webkit-keyframes loop {
+    @-webkit-keyframes loop {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
-  
+
         100% {
             -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
         }
     }
-  
+
     @keyframes loop {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
-  
+
         100% {
             -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
         }
-    } */
+    }
 
     .course-item {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
+        /*width: -webkit-fit-content;*/
+        /*width: -moz-fit-content;*/
+        /*width: fit-content;*/
         margin-right: 20px;
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -729,11 +779,12 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        width: 230px;
+
     }
 
-    .course-link {
-        width: 250px;
-        font-size: 18px;
+    .up {
+        left: 20px;
     }
 
     .course-card-info::after {
@@ -763,6 +814,10 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .course {
+        padding-top: 70px
     }
 
     .about-course-form {
@@ -813,23 +868,23 @@
     }
 
     .about-header-form input::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255);
     }
 
     .about-header-form input::-moz-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255);
     }
 
     .about-header-form input:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255);
     }
 
     .about-header-form input::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255);
     }
 
     .about-header-form input::placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255);
     }
 
     .about-course-form input,
@@ -880,7 +935,8 @@
     }
 
     .course-link {
-        font-size: 20px;
+        width: 250px;
+        font-size: 18px;
     }
 
     .course-card-info::after {
@@ -941,6 +997,18 @@
         height: max-content;
     }
 
+    .course-course .course-box {
+        padding: 20px 0;
+    }
+
+    .course-box-title {
+        margin-top: 10px;
+    }
+
+    .course-course .container {
+        margin-bottom: 0;
+    }
+
     .course-card-title {
         font-size: 28px;
     }
@@ -952,6 +1020,10 @@
 
     .course-box-title {
         font-size: 32px;
+    }
+
+    .main-link {
+        padding: 120px 0 0;
     }
 
     .course-box-sub {
@@ -1003,7 +1075,7 @@
     }
 
     .feature-card {
-        width: 199px;
+        width: 204px;
         height: 87px;
         gap: 3px;
     }
@@ -1082,16 +1154,12 @@
         background-position: right 1.7rem top 50%;
         background-size: 0.65rem auto;
         z-index: 222;
-        color: rgba(255, 255, 255, 0.5);
-    }
-
-    .body-btn:nth-of-type(2) {
-        display: none;
+        color: rgba(255, 255, 255);
     }
 
     .header-contacts,
     .about-section {
-        margin-top: 0;
+        margin-top: 35px;
     }
 
     .body-btns,
@@ -1106,11 +1174,19 @@
 
     .about-section {
         gap: 30px;
-        padding-top: 50px;
+        padding-top: 0;
+    }
+
+    .about-content-img {
+        margin-top: 30px;
+    }
+
+    .course-course .container .container {
+        margin: 16px 0 50px;
     }
 
     .header-socials-link {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .header-socials-text {
@@ -1119,7 +1195,7 @@
     }
 
     .body-btns {
-        right: 30px;
+        right: 20px;
     }
 
     .chat {
@@ -1147,11 +1223,62 @@
     .about-info-txt {
         line-height: 19px;
     }
+
+    .about-header-form input {
+        color: rgba(255, 255, 255);
+    }
+
+    .media-toggle {
+        width: 150px;
+        height: 42.82px;
+        font-size: 18px;
+    }
+
+    .gallery-cards {
+        flex-flow: wrap;
+    }
+
+    .gallery-card {
+        width: 210px;
+        height: 180px;
+    }
+
+    .gallery-card-txt {
+        font-size: 13px;
+    }
+
+    .tutor .container {
+        overflow: overlay;
+        margin-bottom: 50px;
+    }
+
+    .tutor-cards {
+        width: max-content;
+        overflow: overlay;
+        flex-flow: nowrap;
+    }
 }
 
 @media (max-width: 430px) {
     .container {
         max-width: 390px;
+    }
+
+    .about-content-form input,
+    .about-content-form select,
+    .about-content-form button,
+    .about-header-form .dropdown-select {
+        height: 50px;
+    }
+
+    .teethBottom,
+    .teethUp {
+        max-width: 280px;
+        margin: 0;
+    }
+
+    .teethUp {
+        margin-top: 50px;
     }
 
     .feature-cards {
@@ -1164,7 +1291,7 @@
     }
 
     .feature-card {
-        width: 145px;
+        width: 180px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1173,7 +1300,7 @@
         align-items: center;
         padding: 0 0 0 15px;
         gap: 5px;
-        height: 65px;
+        height: 75px;
     }
 
     .swiper {
@@ -1185,7 +1312,7 @@
     }
 
     .feature-card-title {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .feature-card-img {
@@ -1200,18 +1327,37 @@
         width: 390px;
     }
 
-    .course-item {
-        width: 325px;
-    }
-
     .swiper-icons {
         top: -460px;
     }
 
     .header-socials-fixed .header-socials-link {
-        font-size: 18px;
+        font-size: 17px;
     }
 
+    .about-content-img {
+        max-width: 259px;
+        max-height: 228px;
+    }
+
+    .media-toggles {
+        gap: 25px;
+    }
+
+    .gallery-card {
+        width: 180px;
+        height: 120px;
+    }
+
+    .gallery-card-img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .gallery-card-txt {
+        font-size: 11px;
+        padding: 3px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -1219,18 +1365,12 @@
         max-width: 360px;
     }
 
-    .feature {
-        margin-bottom: 40px;
+    .feature-card {
+        width: 170px;
     }
 
-    .about-course-form input,
-    .about-course-form button,
-    .about-course-form button .about-info-txt {
-        width: 360px;
-    }
-
-    .course-item {
-        width: 300px;
+    .course {
+        padding-top: 0;
     }
 
     .swiper-icons {
@@ -1239,11 +1379,76 @@
 
     .teethBottom,
     .teethUp {
-        max-width: 290px;
+        max-width: 225px;
+        margin: 0;
     }
 
-    .header-socials-fixed .header-socials-link {
-        font-size: 14px;
+    .teethUp {
+        margin-top: 20px;
+    }
+
+    .header-socials-text {
+        margin-bottom: 3px;
+    }
+
+    .teethBottom {
+        margin-bottom: 30px;
+    }
+
+    .header-socials-text {
+        font-size: 10px;
+    }
+
+    .header-nav {
+        height: 60px;
+    }
+
+    .about-content-form input,
+    .about-content-form button {
+        max-width: 360px;
+    }
+
+    .header-socials-links {
+        gap: 10px;
+    }
+
+    .body-btn {
+        width: 50px;
+        height: 41px;
+    }
+
+    .header-socials-link {
+        font-size: 15px;
+    }
+
+    .about-header-form input,
+    .about-header-form button,
+    .about-header-form .dropdown-select {
+        width: 308px;
+        font-size: 12px;
+        height: 41.58px;
+    }
+
+    .dropdown-select .option {
+        font-size: 12px;
+    }
+
+    .gallery-card {
+        width: 175px;
+    }
+
+    .media-toggle {
+        width: 137px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .media-toggles::after {
+        height: 35px;
+    }
+
+    .gallery-card {
+        width: 155px;
     }
 
 }
@@ -1325,9 +1530,20 @@
         width: 26px;
     }
 
-    .about-content-img {
-        max-width: 259px;
-        max-height: 228px;
+    .feature-card {
+        width: 150px;
+    }
+
+    .header-socials-fixed .header-socials-link {
+        font-size: 15px;
+    }
+
+    .header-socials-fixed .header-socials-text {
+        font-size: 8px;
+    }
+
+    .body-btns {
+        gap: 20px;
     }
 }
 
@@ -1342,7 +1558,7 @@
     .about-course-form input,
     .about-course-form button,
     .about-course-form button .about-info-txt {
-        width: 320px;
+        width: 308px;
     }
 
     .course-item {
@@ -1362,7 +1578,7 @@
     }
 
     .course-card-info::after {
-        left: 11%;
+        left: 19%;
     }
 
     .swiper-icons-circle {
@@ -1377,6 +1593,10 @@
 
     .swiper-icons {
         top: -466px;
+    }
+
+    .gallery-card-txt {
+        font-size: 9px;
     }
 }
 

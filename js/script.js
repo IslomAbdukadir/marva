@@ -564,6 +564,14 @@ const swiper3 = new Swiper('.media-swiper', {
     nextEl: '.swiper-button-next2',
     prevEl: '.swiper-button-prev2',
   },
+  breakpoints: {
+    490: {
+      slidesPerView: 3,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 const swiper4 = new Swiper('.media-swiper2', {
@@ -575,6 +583,14 @@ const swiper4 = new Swiper('.media-swiper2', {
     nextEl: '.swiper-button-next2',
     prevEl: '.swiper-button-prev2',
   },
+  breakpoints: {
+    490: {
+      slidesPerView: 3,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 // 
