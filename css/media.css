@@ -1264,6 +1264,18 @@
         max-width: 390px;
     }
 
+    .teethBottom.high {
+        -webkit-transform: translateY(-130px);
+        -ms-transform: translateY(-130px);
+        transform: translateY(-130px);
+    }
+
+    .teethUp.down {
+        -webkit-transform: translateY(135px);
+        -ms-transform: translateY(135px);
+        transform: translateY(135px);
+    }
+
     .about-content-form input,
     .about-content-form select,
     .about-content-form button,
@@ -1363,6 +1375,18 @@
 @media (max-width: 390px) {
     .container {
         max-width: 360px;
+    }
+
+    .teethBottom.high {
+        -webkit-transform: translateY(-103px);
+        -ms-transform: translateY(-103px);
+        transform: translateY(-103px);
+    }
+
+    .teethUp.down {
+        -webkit-transform: translateY(125px);
+        -ms-transform: translateY(125px);
+        transform: translateY(125px);
     }
 
     .feature-card {
