@@ -271,7 +271,15 @@
     }
 
     .course-box-sub {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
+    }
+
+    .course-box-txt {
+        margin-bottom: 5px;
+    }
+
+    .course-card-btn {
+        height: 50px;
     }
 
     .course-box-title {
@@ -280,6 +288,7 @@
 
     .course-box {
         height: 235px;
+        overflow: hidden;
     }
 
     .course-box-img {
@@ -655,6 +664,37 @@
     .tutor {
         overflow: hidden;
         padding: 0;
+    }
+
+    .tutor-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal__container-tutor {
+        width: 308px;
+        height: 615px;
+        background: #fff;
+    }
+
+    .modal__container-img {
+        max-width: 100%;
+    }
+
+    .tutor-card-desc,
+    .tutor-card-txt {
+        max-width: 264px;
+        width: 100%;
+    }
+
+    .swiper-slide iframe {
+        width: 97%;
+        height: 58vh;
+    }
+
+    .modal__container {
+        padding: 10px 25px;
+        min-height: 70vh;
     }
 
     .footer {
