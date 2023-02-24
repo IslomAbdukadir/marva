@@ -471,8 +471,12 @@ $(window).scroll(function () {
 
   }
   if ($(window).scrollTop() > headerHeight + 800) {
+    // $(".about-content-video")[0].autoplay = true;
     $("#course").addClass("animate__animated");
     $("#course").addClass("animate__fadeIn");
+  }
+  if ($(window).scrollTop() == headerHeight + 800) {
+    document.getElementById('vid').play(1);
   }
   if ($(window).scrollTop() > headerHeight + 1400) {
     $("#feature").addClass("animate__animated");
@@ -597,15 +601,15 @@ const swiper4 = new Swiper('.media-swiper2', {
 
 $(".media-swiper2").hide();
 
-$(".toggle2").click(function (e) { 
-    $(".toggle1").removeClass("active");
-    $(".toggle2").addClass("active");
-    $(".media-swiper").hide();
-    $(".media-swiper2").show();
+$(".toggle2").click(function (e) {
+  $(".toggle1").removeClass("active");
+  $(".toggle2").addClass("active");
+  $(".media-swiper").hide();
+  $(".media-swiper2").show();
 });
-$(".toggle1").click(function (e) { 
-    $(".toggle2").removeClass("active");
-    $(".toggle1").addClass("active");
-    $(".media-swiper2").hide();
-    $(".media-swiper").show();
+$(".toggle1").click(function (e) {
+  $(".toggle2").removeClass("active");
+  $(".toggle1").addClass("active");
+  $(".media-swiper2").hide();
+  $(".media-swiper").show();
 });
