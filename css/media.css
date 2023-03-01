@@ -953,6 +953,14 @@
         align-items: center;
     }
 
+    .about-header-form .dropdown-select.open .option {
+        color: #747474;
+    }
+
+    .dropdown-select .option.selected {
+        font-weight: 700;
+    }
+
     .about .container:nth-of-type(1),
     .course-cards .container {
         -webkit-box-orient: vertical;
