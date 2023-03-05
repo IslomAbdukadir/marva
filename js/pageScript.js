@@ -154,34 +154,50 @@ $(".exit").click(function () {
 
 // 
 
-let con1 = document.querySelector("#con1");
-let con2 = document.querySelector("#con2");
-let con3 = document.querySelector("#con3");
-let son1 = document.querySelector("#son1");
-let son2 = document.querySelector("#son2");
-let son3 = document.querySelector("#son3");
+// let con1 = document.querySelector("#con1");
+// let con2 = document.querySelector("#con2");
+// let con3 = document.querySelector("#con3");
+// let son1 = document.querySelector("#son1");
+// let son2 = document.querySelector("#son2");
+// let son3 = document.querySelector("#son3");
 
-$(con1).hide();
-$(con2).hide();
-$(con3).hide();
+// $(con1).hide();
+// $(con2).hide();
+// $(con3).hide();
 
-$(son1).click(function () {
-  $(con1).fadeIn(1000);
-  $(con2).hide();
-  $(con3).hide();
+// $(son1).click(function () {
+//   $(con1).fadeIn(1000);
+//   $(con2).hide();
+//   $(con3).hide();
+// });
+// $(son2).click(function () {
+//   $(con2).fadeIn(1000);
+//   $(con1).hide();
+//   $(con3).hide();
+// });
+
+// $(son3).click(function () {
+//   $(con3).fadeIn(1000);
+//   $(con1).hide();
+//   $(con2).hide();
+// });
+
+// $(".link").on("mouseenter", function() {
+//   $(this).children(".submenu").show();
+//   $(this).addClass("highlight");
+// });
+
+// $(".link").on("mouseleave", function() {
+//   $(this).children(".submenu").hide();
+//   $(this).removeClass("highlight");
+// });
+
+$(".con").hide();
+
+$(".course-box-link").click(function () {
+  $(".con").hide();
+  $(this).parent().parent().parent().find(".con").show();
 });
-$(son2).click(function () {
-  $(con2).fadeIn(1000);
-  $(con1).hide();
-  $(con3).hide();
-});
-
-$(son3).click(function () {
-  $(con3).fadeIn(1000);
-  $(con1).hide();
-  $(con2).hide();
-});
-
 //
 
 var $messages = $('.messages-content'),
